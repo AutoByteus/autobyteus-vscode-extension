@@ -3,3 +3,10 @@ dist
 node_modules
 .vscode-test/
 *.vsix
+
+/node_modules
+/packages/web-ui/node_modules
+/packages/extension/node_modules
+/packages/extension/vue-dist
+/packages/web-ui/dist
+/packages/extension/dist
