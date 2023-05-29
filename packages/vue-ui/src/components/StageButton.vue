@@ -2,9 +2,7 @@
     <!-- Component Markup -->
   </template>
   
-<script lang="ts">
-  import { ref } from 'vue';
-  
+<script lang="ts">  
   export default {
     props: ['stageName', 'isActive'],
     setup(props, { emit }) {

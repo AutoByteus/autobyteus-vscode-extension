@@ -10,10 +10,10 @@
   export default {
     props: ['options'],
     methods: {
-      executeOption(option) {
+      executeOption(option: any) {
         this.$emit('executeOption', option);
       }
     }
   }
-  </script>
+</script>
   

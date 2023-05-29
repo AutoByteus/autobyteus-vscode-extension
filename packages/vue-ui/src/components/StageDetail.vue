@@ -25,10 +25,12 @@
     },
     props: ['currentStage'],
     methods: {
-      updateField(newField) {
+      updateField(newField: any) {
+        console.log(newField)
         // Update field logic...
       },
-      executeOption(option) {
+      executeOption(option: any) {
+        console.log(option)
         // Execute option logic...
       }
     }

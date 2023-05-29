@@ -1,19 +1,18 @@
 <template>
-    <div>
-      <div v-for="(field, index) in fields" :key="index">
-        <input v-model="field.value" @input="updateField(index, $event.target.value)" />
-      </div>
+  <div>
+    <div v-for="(field, index) in fields" :key="index">
+      <input v-model="field.value" @input="updateField(index, ($event.target as HTMLInputElement).value)" />
     </div>
-  </template>
-  
+  </div>
+</template>
+
 <script lang="ts">
-  export default {
-    props: ['fields'],
-    methods: {
-      updateField(index, newValue) {
-        this.$emit('updateField', { index, newValue });
-      }
+export default {
+  props: ['fields'],
+  methods: {
+    updateField(index: number, newValue: string) {
+      this.$emit('updateField', { index, newValue });
     }
   }
-  </script>
-  
+}
+</script>
